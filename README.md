@@ -12,7 +12,7 @@ Developed with **TypeScript**, deployment with **Docker**.
 ### 1️⃣ **Clone project**
 
 ```sh
-git clone https://github.com/votre-repo/textmanagergpt.git
+git clone https://github.com/YR72dpi/TextManagerGPT.git
 cd textmanagergpt
 ```
 
