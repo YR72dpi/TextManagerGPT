@@ -7,7 +7,11 @@ services:
       dockerfile: Dockerfile
     container_name: express_api_prod
     ports:
-      - "3000:3000"
+      - "${TextManagerGPT_PORT:-3000}:3000"
     environment:
-      - NODE_ENV=production
+      NODE_ENV: production
+      GPT_API_KEY: ${GPT_API_KEY}
+      GPT_MODEL: ${GPT_MODEL:-gpt-4o-mini}
+      GPT_TEMPERATURE: ${GPT_TEMPERATURE:-0.5}
+      PORT: "3000"
     command: node dist/index.js
